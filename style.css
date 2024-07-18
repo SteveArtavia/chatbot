@@ -7,18 +7,18 @@
 .userMessage{
     display: flex;
     justify-content: right;
-    background-color: cornflowerblue;
+    background-color: rgb(74, 137, 255);
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin: 5px 0;
+    margin: 15px 0 0 7em;
 }
 .botMessage{
     display: flex;
     justify-content: left;
-    background-color: rgb(207, 224, 255);
+    background-color:grey;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin: 5px 0;
+    margin: 15px 7em 0 0;
 }
