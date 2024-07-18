@@ -4,11 +4,10 @@ let sendBtn = document.getElementById('send-btn');
 
 // array that will contain all the data for the chatbot to display for users
 const saludo = [
-    'Hola',
-    'Como estas?',
-    'Encantando de verte!',
+    'Hola, como puedo ayudarte hoy?',
+    'Hola, estoy encantando de verte!',
     'Me alegra verte!',
-    'Como puedo ayudarte?'
+    'Hola como te puedo ayudar?'
 ];
 
 const comoEstas = [
