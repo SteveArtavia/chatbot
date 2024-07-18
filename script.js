@@ -16,7 +16,12 @@ const comoEstas = [
     'Me encuentro muy bien',
     'Estoy excelentemente bien',
     'Estoy fantasticamente bien'
-]
+];
+
+const defaultResponses = [
+    'Siempre es un buen momento para abrazar a tu esposa',
+    'Hace mucho calor no te parece?'
+];
 
 
 let output = '';
