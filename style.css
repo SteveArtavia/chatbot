@@ -1,0 +1,24 @@
+#chat-box{
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    height: 300px;
+    overflow-y: scroll;
+}
+.userMessage{
+    display: flex;
+    justify-content: right;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.botMessage{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(207, 224, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
