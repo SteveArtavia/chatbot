@@ -17,7 +17,7 @@ body{
 .userMessage{
     display: flex;
     justify-content: right;
-    background-color: --primary;
+    background-color: var(--primary);
     color: --background;
     padding: 10px 20px;
     border-radius: 20px;
