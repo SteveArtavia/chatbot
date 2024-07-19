@@ -36,11 +36,6 @@ body{
     width: 0px;
     height: 12px;
 }
-.input{
-    display: flex;
-    align-items: center;
-    color: --primary;
-}
 #send-btn{
     padding: 20px 5px;
     border-radius: 20px;
