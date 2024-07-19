@@ -2,33 +2,22 @@ let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
 let sendBtn = document.getElementById('send-btn');
 
-// array that will contain all the data for the chatbot to display for users
-const saludo = [
-    'Hola, como puedo ayudarte hoy?',
-    'Hola, estoy encantando de verte!',
-    'Me alegra verte!',
-    'Hola como te puedo ayudar?'
+let userName = '';
+
+// arrays that will contain all the data for the chatbot to display for users depending on the topic
+const  getSaludo = () => [
+    `Hola, me alegra saludarte ${userName}`,
+    `Hola ${userName}, estoy encantado de verte!`,
+    'Me alegra mucho verte!',
+    `Hola ${userName}, como puedo ayudarte?`
 ];
 
 const comoEstas = [
-    'Muy bien, como te ayudo',
-    'Me encuentro muy bien',
-    'Estoy excelentemente bien',
-    'Estoy fantasticamente bien'
-];
-
-const defaultResponses = [
-    'Siempre es un buen momento para abrazar a tu esposa',
-    'Hace mucho calor no te parece?'
-];
-
-
-let output = '';
-
-// funcion de pedir nombre y guardar el nombre en una variable para reutilizarla.
-// const nameRequest = () => {
-    
-// }
+    'Muy bien, dime como puedo servirte hoy',
+    'Me encuentro muy bien, hay algo en lo que pueda ayudarte?',
+    'Estoy excelentemente bien, cuentame como puedo serte de ayuda?',
+    'Estoy fantasticamente bien, dime en que te puedo ayudar'
+]
 
 //crear la interaccion de enviar un mensaje y recibir una respuesta
 const interaction = () => {
@@ -42,27 +31,33 @@ const interaction = () => {
     }
 
     if(input === 'hola'){
+        const saludo = getSaludo();
         let index = Math.floor(Math.random() * saludo.length);
-        let response = saludo[index];
-        let botMessage = document.createElement('p');
-        botMessage.classList.add('botMessage');
-        botMessage.textContent = response;
-        chatBox.appendChild(botMessage);
-
-    }
-
-    if(input.includes('como estas')){
+        response = saludo[index];
+    } else if (input.includes('como estas')){
         let index = Math.floor(Math.random() * comoEstas.length);
-        let response = comoEstas[index];
+        response = comoEstas[index];
+    } else if(input.includes('mi nombre es')){
+        userName = input.split('mi nombre es ')[1].trim();
+        response = `Un gusto ${userName}`
+    } else {
+        response = 'lo siento no te entendi. ¿Puedes intentar con otra pregunta? '
+    }
+
+    setTimeout(()=> {
         let botMessage = document.createElement('p');
         botMessage.classList.add('botMessage');
         botMessage.textContent = response;
         chatBox.appendChild(botMessage);
-
-    }
+    }, 500);
 
     userInput.value = '';
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
 sendBtn.addEventListener('click', interaction);
+userInput.addEventListener('keypress', (e) => {
+    if(e.key === 'Enter'){
+        interaction();
+    }
+})
