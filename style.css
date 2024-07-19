@@ -17,8 +17,8 @@ body{
 .userMessage{
     display: flex;
     justify-content: right;
-    background-color: rgb(74, 137, 255);
-    color: white;
+    background-color: --primary;
+    color: --background;
     padding: 10px 20px;
     border-radius: 20px;
     margin: 15px 0 0 7em;
@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: left;
     background-color:grey;
-    color: white;
+    color: --background;
     padding: 10px 20px;
     border-radius: 20px;
     margin: 15px 7em 0 0;
@@ -45,7 +45,7 @@ body{
 }
 input{
     background-color: var(--background) !important;
-    color: var(--primary);
+    color: var(--primary) !important;
     border: 1px solid var(--primary) !important;
     margin-bottom: 10px;
     border-radius: 20px !important;
