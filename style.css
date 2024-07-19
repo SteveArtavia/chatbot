@@ -1,9 +1,18 @@
-
+:root{
+    --primary: rgb(65, 224, 150);
+    --background: rgb(4, 15, 51);
+}
+body{
+    background-color: var(--background);
+    font-family: 'JetBrains Mono', monospace;
+}
 #chat-box{
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid #efefef;
     height: 300px;
     overflow-y: scroll;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
 }
 .userMessage{
     display: flex;
@@ -11,7 +20,7 @@
     background-color: rgb(74, 137, 255);
     color: white;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 15px 0 0 7em;
 }
 .botMessage{
@@ -20,6 +29,28 @@
     background-color:grey;
     color: white;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 15px 7em 0 0;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 12px;
+}
+.input{
+    display: flex;
+    align-items: center;
+}
+#send-btn{
+    padding: 20px 5px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--background);
+}
+input{
+    background-color: var(--background) !important;
+    color: var(--primary);
+    border: 1px solid var(--primary) !important;
+    margin-bottom: 10px;
+    border-radius: 20px !important;
 }
