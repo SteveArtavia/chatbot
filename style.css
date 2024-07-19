@@ -39,6 +39,7 @@ body{
 .input{
     display: flex;
     align-items: center;
+    color: --primary;
 }
 #send-btn{
     padding: 20px 5px;
