@@ -13,13 +13,14 @@ body{
     overflow-y: scroll;
     background-color: var(--background);
     border: 1px solid var(--primary);
+    padding: 1.5em !important;
 }
 .userMessage{
     display: flex;
     justify-content: right;
     background-color: var(--primary);
     color: --background;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 20px;
     margin: 15px 0 0 2em;
 }
@@ -28,7 +29,7 @@ body{
     justify-content: left;
     background-color:rgb(176, 238, 209);
     color: --background;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 20px;
     margin: 15px 2em 0 0;
 }
