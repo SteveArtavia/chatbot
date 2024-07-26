@@ -99,6 +99,27 @@ const getInfo = () => [
     </ul>`
 ];
 
+const getGracias = () => [
+    `¡De nada, ${userName}! Estoy aquí para ayudarte.`,
+    `No hay de qué, ${userName}! Si necesitas algo más, solo dímelo.`,
+    `¡Es un placer, ${userName}! ¿Hay algo más en lo que pueda asistirte?`,
+    `¡Con gusto, ${userName}! Estoy aquí para ayudarte con lo que necesites.`,
+    `¡De nada, ${userName}! Si tienes más preguntas, estaré encantado de responder.`,
+    `¡Con mucho gusto, ${userName}! No dudes en volver si necesitas más ayuda.`,
+    `¡Siempre es un placer ayudar, ${userName}! ¿Hay algo más que pueda hacer por ti?`,
+    `¡De nada, ${userName}! Espero que tengas un gran día.`,
+    `¡No es nada, ${userName}! Estoy aquí para lo que necesites.`,
+    `¡Estoy feliz de poder ayudarte, ${userName}! ¿Alguna otra cosa en la que pueda colaborar?`,
+    `¡De nada, ${userName}! Tu satisfacción es mi prioridad.`,
+    `¡Es un placer ayudarte, ${userName}! Si necesitas algo más, no dudes en decirlo.`,
+    `¡De nada, ${userName}! ¿Te puedo ayudar con algo más?`,
+    `¡Con gusto, ${userName}! Si tienes más dudas, aquí estaré.`,
+    `¡No hay problema, ${userName}! Estoy a tu disposición.`,
+    `¡Con placer, ${userName}! ¿Necesitas asistencia adicional?`,
+    `¡Siempre estoy aquí para ayudarte, ${userName}! ¿Qué más puedo hacer por ti?`,
+    `¡De nada, ${userName}! Espero haber sido útil.`,
+    `¡Es un placer ayudar, ${userName}! Si necesitas más información, solo dímelo.`
+];
 
 const curriculum = '/assets/CV.pdf';
 
@@ -138,6 +159,10 @@ const interaction = () => {
         let informacion = getInfo();
         let index = Math.floor(Math.random() * informacion.length);
         response = informacion[index];
+    } else if(input.includes('gracias')){
+        let gracias = getGracias();
+        let index = Math.floor(Math.random()*gracias.length);
+        response = gracias[index];
     } else {
         let fallback = fallbackResponses();
         let index = Math.floor(Math.random() * fallback.length);
