@@ -61,8 +61,8 @@ const fallbackResponses = () => [
 ];
 
 const getInfo = () => [
-    `¡Hola! Soy un chatbot diseñado para asistirte con varias cosas. Aquí tienes algunas de las cosas que puedo hacer:
-    <ul>
+    `<ul>
+        Aquí tienes algunas de las cosas que puedo hacer:
         <li><strong>Descargar mi currículum:</strong> Puedes obtener una copia de mi currículum desde un enlace de descarga.</li>
         <li><strong>Proporcionar información de contacto:</strong> Puedo darte detalles de contacto, incluyendo correo electrónico y número de teléfono.</li>
         <li><strong>Responder a preguntas frecuentes:</strong> Puedo responder a preguntas sobre horarios de trabajo, servicios ofrecidos, y más.</li>
@@ -70,8 +70,8 @@ const getInfo = () => [
         <li><strong>Enlaces a mi sitio web:</strong> Puedo proporcionarte el enlace a mi sitio web para que obtengas más información.</li>
         <li><strong>Ayuda general:</strong> Estoy aquí para ayudarte con cualquier otra consulta que tengas. Solo pregúntame.</li>
     </ul>`,
-    `Soy capaz de hacer varias cosas para asistirte. Aquí tienes algunas:
-    <ul>
+    `<ul>
+        Soy capaz de hacer varias cosas para asistirte. Aquí tienes algunas:
         <li><strong>Currículum:</strong> Puedo proporcionarte un enlace para descargar mi currículum.</li>
         <li><strong>Contacto:</strong> Puedo darte mi correo electrónico y número de teléfono para que te pongas en contacto conmigo.</li>
         <li><strong>Información:</strong> Puedo responder preguntas sobre el horario de trabajo, los servicios ofrecidos, y más.</li>
@@ -79,8 +79,8 @@ const getInfo = () => [
         <li><strong>Sitio web:</strong> Puedo ofrecerte el enlace a mi sitio web para más información.</li>
         <li><strong>Asistencia general:</strong> Si tienes alguna otra pregunta o necesitas ayuda, no dudes en decírmelo.</li>
     </ul>`,
-    `Hola, soy el asistente virtual de Steve. Aquí están algunas de las cosas que puedo hacer:
-    <ul>
+    `<ul>
+        Aquí están algunas de las cosas que puedo hacer:
         <li><strong>Descargar mi currículum:</strong> Ofrezco un enlace para que puedas descargar mi currículum.</li>
         <li><strong>Proporcionar contacto:</strong> Puedo darte mi dirección de correo electrónico y número de teléfono.</li>
         <li><strong>Responder a preguntas comunes:</strong> Como información sobre horarios de trabajo y servicios.</li>
@@ -88,8 +88,8 @@ const getInfo = () => [
         <li><strong>Más detalles:</strong> Puedo dirigirte a mi sitio web para obtener más información.</li>
         <li><strong>Asistencia adicional:</strong> Estoy aquí para ayudarte con cualquier otra pregunta.</li>
     </ul>`,
-    `¡Hola! Estas son algunas de las cosas que puedo hacer:
-    <ul>
+    `<ul>
+        Estas son algunas de las cosas que puedo hacer:
         <li><strong>Descargar currículum:</strong> Puedo darte un enlace para descargar mi currículum.</li>
         <li><strong>Información de contacto:</strong> Ofrezco detalles como correo electrónico y teléfono.</li>
         <li><strong>Responder preguntas:</strong> Puedo responder preguntas sobre horarios, servicios, y más.</li>
