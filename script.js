@@ -62,37 +62,37 @@ const fallbackResponses = () => [
 
 const getInfo = () => [
     `<ul>
-        Aquí tienes algunas de las cosas que puedo hacer:
+        Aquí tienes algunas de las cosas que puedo hacer:<br><br>
         <li><strong>Descargar mi currículum:</strong> Puedes obtener una copia de mi currículum desde un enlace de descarga.</li>
         <li><strong>Proporcionar información de contacto:</strong> Puedo darte detalles de contacto, incluyendo correo electrónico y número de teléfono.</li>
-        <li><strong>Responder a preguntas frecuentes:</strong> Puedo responder a preguntas sobre horarios de trabajo, servicios ofrecidos, y más.</li>
+        <li><strong>Responder a preguntas frecuentes:</strong> Puedo responder a preguntas servicios ofrecidos.</li>
         <li><strong>Enlaces a redes sociales:</strong> Puedo proporcionarte enlaces a mis perfiles de redes sociales para que te conectes conmigo.</li>
         <li><strong>Enlaces a mi sitio web:</strong> Puedo proporcionarte el enlace a mi sitio web para que obtengas más información.</li>
         <li><strong>Ayuda general:</strong> Estoy aquí para ayudarte con cualquier otra consulta que tengas. Solo pregúntame.</li>
     </ul>`,
     `<ul>
-        Soy capaz de hacer varias cosas para asistirte. Aquí tienes algunas:
+        Soy capaz de hacer varias cosas para asistirte. Aquí tienes algunas:<br><br>
         <li><strong>Currículum:</strong> Puedo proporcionarte un enlace para descargar mi currículum.</li>
         <li><strong>Contacto:</strong> Puedo darte mi correo electrónico y número de teléfono para que te pongas en contacto conmigo.</li>
-        <li><strong>Información:</strong> Puedo responder preguntas sobre el horario de trabajo, los servicios ofrecidos, y más.</li>
+        <li><strong>Información:</strong> Puedo responder preguntas sobrelos servicios ofrecidos.</li>
         <li><strong>Redes sociales:</strong> Puedo proporcionarte enlaces a mis perfiles en LinkedIn, Behance, y GitHub.</li>
         <li><strong>Sitio web:</strong> Puedo ofrecerte el enlace a mi sitio web para más información.</li>
         <li><strong>Asistencia general:</strong> Si tienes alguna otra pregunta o necesitas ayuda, no dudes en decírmelo.</li>
     </ul>`,
     `<ul>
-        Aquí están algunas de las cosas que puedo hacer:
+        Aquí están algunas de las cosas que puedo hacer:<br><br>
         <li><strong>Descargar mi currículum:</strong> Ofrezco un enlace para que puedas descargar mi currículum.</li>
         <li><strong>Proporcionar contacto:</strong> Puedo darte mi dirección de correo electrónico y número de teléfono.</li>
-        <li><strong>Responder a preguntas comunes:</strong> Como información sobre horarios de trabajo y servicios.</li>
+        <li><strong>Responder a preguntas comunes:</strong> Como información sobre servicios.</li>
         <li><strong>Enlaces a redes sociales:</strong> Puedo proporcionarte enlaces a mis perfiles profesionales.</li>
         <li><strong>Más detalles:</strong> Puedo dirigirte a mi sitio web para obtener más información.</li>
         <li><strong>Asistencia adicional:</strong> Estoy aquí para ayudarte con cualquier otra pregunta.</li>
     </ul>`,
     `<ul>
-        Estas son algunas de las cosas que puedo hacer:
+        Estas son algunas de las cosas que puedo hacer:<br><br>
         <li><strong>Descargar currículum:</strong> Puedo darte un enlace para descargar mi currículum.</li>
         <li><strong>Información de contacto:</strong> Ofrezco detalles como correo electrónico y teléfono.</li>
-        <li><strong>Responder preguntas:</strong> Puedo responder preguntas sobre horarios, servicios, y más.</li>
+        <li><strong>Responder preguntas:</strong> Puedo responder preguntas sobre servicios.</li>
         <li><strong>Redes sociales:</strong> Puedo proporcionarte enlaces a mis perfiles en redes sociales.</li>
         <li><strong>Enlace al sitio web:</strong> Puedo darte el enlace a mi sitio web para más detalles.</li>
         <li><strong>Asistencia:</strong> Estoy disponible para ayudarte con cualquier otra consulta.</li>
