@@ -186,7 +186,7 @@ const interaction = () => {
         let comoEstas = getComoEstas();
         let index = Math.floor(Math.random() * comoEstas.length);
         response = comoEstas[index];
-    } else if(input.includes('mi nombre es') || input.includes('me llamo') || input.includes('hola soy')){
+    } else if(input.includes('mi nombre es') || input.includes('me llamo')){
         if(input.includes('mi nombre es')){
             userName = input.split('mi nombre es ')[1].trim();
         } else if(input.includes('me llamo')){
