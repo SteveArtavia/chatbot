@@ -191,9 +191,7 @@ const interaction = () => {
             userName = input.split('mi nombre es ')[1].trim();
         } else if(input.includes('me llamo')){
             userName = input.split('me llamo ')[1].trim();
-        } else if(input.includes('hola soy')){
-            userName = input.split('hola soy '[1].trim();
-}} else if(input.includes('adios') || input.includes('chao') || input.includes('hasta luego')){
+        } else if(input.includes('adios') || input.includes('chao') || input.includes('hasta luego')){
         let despedida = getDespedida();
         let index = Math.floor(Math.random() * despedida.length);
         response = despedida[index];
