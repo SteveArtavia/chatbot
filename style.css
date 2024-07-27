@@ -51,3 +51,6 @@ input{
     margin-bottom: 10px;
     border-radius: 20px !important;
 }
+input::placeholder{
+    color: grey !important;
+}
