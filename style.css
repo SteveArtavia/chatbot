@@ -54,3 +54,14 @@ input{
 input::placeholder{
     color: grey !important;
 }
+.link{
+    background-color: var(--background);
+    color: var(--primary);
+    padding: 5px 15px;
+    margin-left: 20px;
+    border-radius: 2em;
+    text-decoration: none;
+}
+.link:hover{
+    background-color: rgb(8, 25, 80);
+}
