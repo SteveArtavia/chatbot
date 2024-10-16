@@ -25,11 +25,15 @@ export const handleChatInteraction = (input) => {
         const goodbye = chatResponses.getGoodbye(userName);
         let index = Math.floor(Math.random() * goodbye.length);
         response = goodbye[index];
-    } else if (input.includes('thanks')) {
+    } else if (input.includes('thank')) {
         const thanks = chatResponses.getThanks(userName);
         let index = Math.floor(Math.random() * thanks.length);
         response = thanks[index];
-    } else {
+    }else if(input.includes('help')){
+        const info = chatResponses.getInfo();
+        let index = Math.floor(Math.random() * info.length);
+        response = info[index];
+    }else {
         const fallback = chatResponses.fallbackResponses(userName);
         let index = Math.floor(Math.random() * fallback.length);
         response = fallback[index];

@@ -4,8 +4,6 @@ let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
 let sendBtn = document.getElementById('send-btn');
 
-// Agregar la interacción cuando el usuario envía un mensaje
-
 const sendMessage = () => {
     let input = userInput.value;
 
@@ -19,11 +17,14 @@ const sendMessage = () => {
             let botResponse = handleChatInteraction(input);
             let botMessage = document.createElement('p');
             botMessage.classList.add('botMessage');
-            botMessage.textContent = botResponse;
+            botMessage.innerHTML = botResponse;
             chatBox.appendChild(botMessage);
+            chatBox.scrollTop = chatBox.scrollHeight;
         }, 600)
 
-        userInput.value = ''; // Limpiar input después de enviar
+        userInput.value = '';
+
+        chatBox.scrollTop = chatBox.scrollHeight;
     }
 }
 

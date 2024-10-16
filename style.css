@@ -1,67 +1,79 @@
 :root{
-    --primary: rgb(65, 224, 150);
-    --background: rgb(4, 15, 51);
+    --primary: rgb(1, 67, 114);
+    --bright: rgb(42, 164, 252);
+    --user:rgb(0, 255, 170);
 }
-body{
-    background-color: var(--background);
-    font-family: 'JetBrains Mono', monospace;
+body, html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 9, 15);
+    font-family: 'Luciana', monospace;
 }
+
 #chat-box{
-    border-radius: 20px;
-    border: 1px solid #efefef;
-    height: 60vh;
+    padding: 1em 4em !important;
+    background-color: transparent;
+    opacity: 0.7;
+    border-radius: 0;
+    border: 1px solid var(--bright);
+    color: var(--bright);
+    background: repeating-linear-gradient(
+        0,
+        rgb(1, 67, 114),
+        rgb(1, 67, 114) 1px,
+        rgb(1, 9, 15) 2px,
+        rgb(1, 9, 15) 2px
+    );
+    max-height: 400px;
     overflow-y: scroll;
-    background-color: var(--background);
-    border: 1px solid var(--primary);
-    padding: 1.5em !important;
-}
-.userMessage{
-    display: flex;
-    justify-content: right;
-    background-color: var(--primary);
-    color: --background;
-    padding: 10px 25px;
-    border-radius: 20px;
-    margin: 15px 0 0 2em;
-}
-.botMessage{
-    display: flex;
-    justify-content: left;
-    background-color:rgb(176, 238, 209);
-    color: --background;
-    padding: 10px 25px;
-    border-radius: 20px;
-    margin: 15px 2em 0 0;
+
 }
 ::-webkit-scrollbar{
-    width: 0px;
-    height: 12px;
+    display: none;
 }
-#send-btn{
-    padding: 20px 5px;
-    border-radius: 20px;
-    background-color: var(--primary);
-    border: none;
-    color: var(--background);
+@media (max-width: 576px){  
+    #chat-box{
+        height: 1000px;
+        padding: 1em 2em !important;
+        width: 90vw;
+    }
+}
+.userMessage{
+    color: var(--user);
+    text-align: right;
+    text-shadow: 0 0 10px rgba(17, 146, 238, 0.8),
+                 0 0 20px rgba(17, 146, 238, 0.6),
+                 0 0 30px rgba(17, 146, 238, 0.4);
+}
+.botMessage{
+    color: var(--bright);
+    text-shadow: 0 0 10px rgba(17, 146, 238, 0.8),
+                 0 0 20px rgba(17, 146, 238, 0.6),
+                 0 0 30px rgba(17, 146, 238, 0.4);
 }
 input{
-    background-color: var(--background) !important;
-    color: var(--primary) !important;
-    border: 1px solid var(--primary) !important;
-    margin-bottom: 10px;
-    border-radius: 20px !important;
+    background-color: transparent !important;
+    color: var(--bright)!important;
+    border: 1px solid var(--bright) !important;
+    border-radius: 0 !important;
+    border-right: none !important;
 }
 input::placeholder{
-    color: grey !important;
+    color: var(--primary) !important;
 }
-.link{
-    background-color: var(--background);
-    color: var(--primary);
-    padding: 5px 15px;
-    margin-left: 20px;
-    border-radius: 2em;
-    text-decoration: none;
+button{
+    background-color: transparent !important;
+    color: var(--bright) !important;
+    font-weight: bolder !important;
+    outline: none !important;
+    border-color: var(--bright) !important;
+    border-left: none !important;
+    border-radius: 0 !important;
 }
-.link:hover{
-    background-color: rgb(8, 25, 80);
+button:hover{
+    border-color: none !important;
+    color: var(--user) !important;
 }
