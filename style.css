@@ -13,6 +13,11 @@ body, html {
     font-family: 'Poppins', sans-serif
 }
 
+.title{
+    color: white;
+    margin-bottom: 2rem;
+}
+
 #chat-box{
     padding: 1em 4em !important;
     background-color: transparent;
@@ -28,6 +33,7 @@ body, html {
         rgb(1, 9, 15) 2px
     );
     max-height: 400px;
+    min-height: 70vh;
     overflow-y: scroll;
 
 }
