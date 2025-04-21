@@ -21,7 +21,7 @@ export const handleChatInteraction = (input) => {
         const option = chatResponses.getOptions();
         response = option[0];
     } else {
-        const defaultOption = chatResponses.getDefault();
+        const defaultOption = chatResponses.getDownload();
         response = defaultOption[0];
     }
 
