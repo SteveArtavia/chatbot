@@ -4,12 +4,6 @@ let response = '';
 let option = null;
 let index = 0;
 
-// SOLUCIONAR COMO MOSTRAR MENSAJE INICIAL
-export function showInitialMessage(){
-    response = `Hola como te ayudo`;
-    return;
-}
-//////////////////////////////////////////////////
 
 export const handleChatInteraction = (input) => {
     input = input.trim().toLowerCase();

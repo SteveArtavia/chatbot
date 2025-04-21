@@ -1,7 +1,4 @@
-const contactButton = () => {
-    option = chatResponses.getContact();
-    response = option[0];
-}
+
 
 const chatResponses = {
     getGreeting: () => [
@@ -31,7 +28,7 @@ const chatResponses = {
         `I can help you with this info: <hr>
             <div class="options">
                 <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
-                <button class="option" onclick="contactButton();">Contact</button>
+                <button class="option" onclick="">Contact</button>
                 <a class="option" href="https://steveartavia.netlify.app/">Portfolio</a>
                 <button class="option">About me</button>
                 <button class="option">Skills</button>
