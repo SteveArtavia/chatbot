@@ -12,7 +12,6 @@ const chatResponses = {
         `<button class="option">Skills</button>`,
         `<button class="option">Education</button>`,
         `<button class="option">Social Media</button>`
-
     ],
 
     getDownload: () => [

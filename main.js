@@ -1,5 +1,4 @@
 import { handleChatInteraction } from './chatLogic.js';
-import { showInitialMessage } from './chatLogic.js';
 
 let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
