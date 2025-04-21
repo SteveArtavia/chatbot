@@ -5,7 +5,7 @@ const chatResponses = {
     ],
 
     getOptions: () => [
-        `<button class="option">Download CV</button>`,
+        `<a class="option">Download CV</a>`,
         `<button class="option">Contact</button>`,
         `<button class="option">Portfolio link</button>`,
         `<button class="option">About me</button>`,
@@ -15,8 +15,8 @@ const chatResponses = {
     ],
 
     getDownload: () => [
-        `I'd be happy to share my resume with you. You can download it by       clicking here:
-            <button class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</button>
+        `I'd be happy to share my resume with you. You can download it by       clicking here:<br><br>
+            <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
         `
     ],
 

@@ -12,17 +12,20 @@ export function showInitialMessage(){
 export const handleChatInteraction = (input) => {
     input = input.trim().toLowerCase();
 
+    let option = null;
+    let index = 0;
+
     if (input.includes("hola")) {
-        const greeting = chatResponses.getGreeting();
-        let index = Math.floor(Math.random() * greeting.length);
-        response = greeting[index];
+        option = chatResponses.getGreeting();
+        index = Math.floor(Math.random() * option.length);
+        response = option[index];
 
     } else if (input.includes("help")) {
-        const option = chatResponses.getOptions();
+        option = chatResponses.getDefaultMessage();
         response = option[0];
     } else {
-        const defaultOption = chatResponses.getDownload();
-        response = defaultOption[0];
+        option = chatResponses.getDefaultMessage();
+        response = option[0];
     }
 
     return response;
