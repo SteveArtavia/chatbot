@@ -35,6 +35,7 @@ const sendMessage = () => {
 
         chatBox.scrollTop = chatBox.scrollHeight;
         userInput.blur();
+
     }
 }
 

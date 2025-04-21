@@ -93,6 +93,8 @@ button:hover{
     border: none;
     color: var(--primary) !important;
     border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 .option:hover{
     color: var(--primary) !important;
