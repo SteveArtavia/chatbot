@@ -1,8 +1,6 @@
 import { handleChatInteraction } from './chatLogic.js';
 import { showInitialMessage } from './chatLogic.js';
 
-alert("I'm still developing this project, it's not finished");
-
 let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
 let sendBtn = document.getElementById('send-btn');
