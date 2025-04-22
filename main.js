@@ -1,4 +1,5 @@
 import { handleChatInteraction } from './chatLogic.js';
+import chatResponses from './chatResponses.js';
 
 let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
@@ -49,3 +50,15 @@ userInput.addEventListener('keypress', (event) => {
     }
 });
 
+
+const contactButton = () => {
+    setTimeout(() => {
+        let botMessage = document.createElement('p');
+        botMessage.classList.add('botMessage');
+        botMessage.innerHTML = chatResponses.getContact();
+        chatBox.appendChild(botMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 400);
+}
+
+window.contactButton = contactButton;

@@ -13,7 +13,7 @@ export const handleChatInteraction = (input) => {
         index = Math.floor(Math.random() * option.length);
         response = option[index];
 
-    } else if (input.includes("curriculum") || input.includes("cv")) {
+    } else if (input.includes("curriculum") || input.includes("cv") || input.includes("resume")) {
         option = chatResponses.getDownload();
         response = option[0];
 
