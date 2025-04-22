@@ -115,12 +115,12 @@ input::placeholder{
 
 /* Pantallas moviles */
 @media (max-width: 576px){  
+    .main__container{
+        width: 90vw;
+    }
     #chat-box{
         height: 1000px;
         padding: 2rem 1.5rem !important;
-        width: 90vw;
-    }
-    input{
         width: 90vw;
     }
 }
