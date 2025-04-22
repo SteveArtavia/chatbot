@@ -1,7 +1,8 @@
 :root{
-    --primary: rgb(2, 13, 20);
-    --bright: rgb(42, 164, 252);
-    --user:rgb(0, 255, 170);
+    --primary: rgb(255, 255, 255);
+    --color1: rgb(15, 15, 15);
+    --color2:rgb(83, 63, 172);
+    --color3: rgb(236, 236, 236);
 }
 *{
     margin: 0;
@@ -10,7 +11,8 @@
 }
 body {
     background-color: var(--primary);
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    color: var(--color1);
 }
 
 .main{
@@ -24,7 +26,7 @@ body {
     align-items: center;
     margin: auto;
 }
-.main__container__title{
+.title{
     color: white;
     margin-bottom: 2rem;
 }
@@ -36,8 +38,8 @@ body {
     background-color: transparent;
     opacity: 0.7;
     border-radius: 1rem;
-    border: 1px solid var(--bright);
-    color: var(--bright);
+    border: 1px solid var(--color1);
+    color: var(--color1);
     width: 70vw;
     max-height: 400px;
     min-height: 70vh;
@@ -49,17 +51,23 @@ body {
 }
 
 .userMessage{
-    color: var(--user);
+    color: var(--primary);
     text-align: right;
+    margin-left: 4rem;
+    background-color: var(--color1);
+    padding: 1.2rem;
+    border-radius: 1rem;
 }
 .botMessage{
-    color: var(--bright);
+    color: var(--color1);
+    text-align: left;
+    margin-right: 4rem;
+    background-color: var(--color3);
+    padding: 1.2rem;
+    border-radius: 1rem;
 }
 input{
-    background-color: transparent !important;
-    color: var(--bright)!important;
-    border: 1px solid var(--bright) !important;
-    border-right: none !important;
+    border-radius: 2rem;
 }
 input:focus{
     box-shadow: none !important;
@@ -69,15 +77,15 @@ input::placeholder{
 }
 button{
     background-color: transparent !important;
-    color: var(--bright) !important;
+    color: var(--color1) !important;
     font-weight: bolder !important;
     outline: none !important;
-    border-color: var(--bright) !important;
+    border-color: var(--color1) !important;
     border-left: none !important;
 }
 button:hover{
     border-color: none !important;
-    color: var(--user) !important;
+    color: var(--color2) !important;
 }
 #send-btn{
     font-size: 1.5rem;
@@ -88,24 +96,24 @@ button:hover{
     flex-wrap: wrap;
 }
 .option{
-    background-color: var(--bright) !important;
+    background-color: var(--color1) !important;
     padding: 0.5rem 1rem;
     border: none;
     color: var(--primary) !important;
     border-radius: 0.5rem;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 100 !important;
 }
 .option:hover{
     color: var(--primary) !important;
-    background-color: var(--user) !important;
+    background-color: var(--color2) !important;
 }
 
 /* Pantallas moviles */
 @media (max-width: 576px){  
     #chat-box{
         height: 1000px;
-        padding: 1em 2em !important;
+        padding: 2rem 1.5rem !important;
         width: 90vw;
     }
 }
