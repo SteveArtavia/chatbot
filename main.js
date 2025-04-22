@@ -40,7 +40,6 @@ const sendMessage = () => {
     }
 }
 
-
 sendBtn.addEventListener("click", sendMessage);
 
 userInput.addEventListener('keypress', (event) => {
@@ -51,6 +50,7 @@ userInput.addEventListener('keypress', (event) => {
 });
 
 
+/// BUTTON RESPONSES FUNCTIONS ///
 const contactButton = () => {
     setTimeout(() => {
         let botMessage = document.createElement('p');
@@ -62,3 +62,14 @@ const contactButton = () => {
 }
 
 window.contactButton = contactButton;
+
+const aboutMeButton = () => {
+    setTimeout(() => {
+        let botMessage = document.createElement('p');
+        botMessage.classList.add('botMessage');
+        botMessage.innerHTML = chatResponses.getAboutMe();
+        chatBox.appendChild(botMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }, 400);
+}
+window.aboutMeButton = aboutMeButton;
