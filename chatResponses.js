@@ -2,7 +2,13 @@
 
 const chatResponses = {
     getGreeting: () => [
-        `Hi! How can I help you?`
+        `Hi! How can I help you today? Here are some options:<br><br>
+        <div class="options">
+            <button class="option" onclick="contactButton();">Contact</button>
+            <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
+            <a class="option" href="https://steveartavia.netlify.app/">View Portfolio</a>
+        </div>
+        `
     ],
 
     getDownload: () => [
