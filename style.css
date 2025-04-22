@@ -120,6 +120,9 @@ input::placeholder{
         padding: 2rem 1.5rem !important;
         width: 90vw;
     }
+    input{
+        width: 90vw;
+    }
 }
 @media (min-width: 992px){
     #chat-box{
