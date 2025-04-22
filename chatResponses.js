@@ -19,10 +19,6 @@ const chatResponses = {
     ],
 
     getDownload: () => [
-<<<<<<< HEAD
-        `I'd be happy to share my resume with you. You can download it by       clicking here:<br>
-            <button class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</button>
-=======
         `I'd be happy to share Steve's resume with you. You can download it by       clicking the button below:<br><br>
             <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
         `
@@ -31,7 +27,6 @@ const chatResponses = {
     getPortfolio: () => [
         `You can check out my portfolio here: <br><br>
             <a class="option" href="https://steveartavia.netlify.app/">Portfolio</a>
->>>>>>> main
         `
     ],
 
