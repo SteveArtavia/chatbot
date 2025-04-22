@@ -3,6 +3,7 @@
     --color1: rgb(15, 15, 15);
     --color2:rgb(83, 63, 172);
     --color3: rgb(236, 236, 236);
+    --color4:rgb(92, 92, 92);
 }
 *{
     margin: 0;
@@ -68,35 +69,38 @@ body {
 }
 input{
     border-radius: 2rem;
+    background-color: var(--color3) !important;
+    padding: 1rem 1.2rem !important;
+    border: none !important;
 }
 input:focus{
     box-shadow: none !important;
+    border: none;
 }
 input::placeholder{
-    color: var(--primary) !important;
+    color: grey !important;
 }
-button{
-    background-color: transparent !important;
+#send-btn{
+    background-color: var(--color3);
     color: var(--color1) !important;
     font-weight: bolder !important;
     outline: none !important;
-    border-color: var(--color1) !important;
-    border-left: none !important;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
-button:hover{
+#send-btn:hover{
     border-color: none !important;
     color: var(--color2) !important;
 }
-#send-btn{
-    font-size: 1.5rem;
-}
+
 .options{
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
 .option{
-    background-color: var(--color1) !important;
+    background-color: var(--color4) !important;
     padding: 0.5rem 1rem;
     border: none;
     color: var(--primary) !important;
