@@ -25,6 +25,10 @@ export const handleChatInteraction = (input) => {
         option = chatResponses.getAboutMe();
         response = option[0];
 
+    } else if (input.includes("help")) {
+        option = chatResponses.getHelp();
+        response = option[0];
+
     } else {
         option = chatResponses.getDefaultMessage();
         response = option[0];
