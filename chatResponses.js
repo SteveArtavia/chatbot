@@ -16,7 +16,7 @@ const chatResponses = {
     ],
 
     getDownload: () => [
-        `I'd be happy to share my resume with you. You can download it by       clicking here:
+        `I'd be happy to share my resume with you. You can download it by       clicking here:<br>
             <button class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</button>
         `
     ],
