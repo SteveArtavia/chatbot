@@ -1,6 +1,11 @@
 
 
 const chatResponses = {
+
+    getInitialMessage: () => [
+        `Hello! I'm Artie, Steve's assistant. You can ask me about his resume, his portfolio, or how to contact him.`
+    ],
+
     getGreeting: () => [
         `Hi! How can I help you today? Here are some options:<br><br>
         <div class="options">
@@ -13,7 +18,7 @@ const chatResponses = {
         `Hello! What can I do for you? Feel free to explore the options below:<br><br>
         <div class="options">
             <button class="option" onclick="contactButton();">Get in Touch</button>
-            <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download My CV</a>
+            <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
             <a class="option" href="https://steveartavia.netlify.app/">See Steve's Portfolio</a>
         </div>`
     ],
@@ -31,7 +36,7 @@ const chatResponses = {
     ],
 
     getContact: () => [
-        `You can reach me through the following:<br>
+        `You can reach Steve through the following:<br>
         📧 Email: <a href="mailto:stvartavia@gmail.com">stvartavia@gmail.com</a><br>
         🔗 LinkedIn: <a href="https://www.linkedin.com/in/steve-artavia-432b50242/" target="_blank">https://www.linkedin.com/in/steve-artavia</a><br>
         📱 Phone: <a href="tel:+50689545745">+506 8954 5745</a>`  

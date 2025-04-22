@@ -5,6 +5,18 @@ let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
 let sendBtn = document.getElementById('send-btn');
 
+const initialMessage = () => {
+    let botMessage = document.createElement('p');
+        botMessage.classList.add('botMessage');
+        botMessage.innerHTML = chatResponses.getInitialMessage();
+        chatBox.appendChild(botMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initialMessage();
+})
+
 const displayUserMessage = (input) => {
     let userMessage = document.createElement('p');
         userMessage.classList.add('userMessage');
