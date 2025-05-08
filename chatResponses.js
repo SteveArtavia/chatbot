@@ -24,14 +24,14 @@ const chatResponses = {
     ],
 
     getDownload: () => [
-        `I'd be happy to share Steve's resume with you. You can download it by       clicking the button below:<br><br>
-            <a class="option" href="./assets/CV-SteveArtavia.pdf" download>Download CV</a>
+        `I'd be happy to share Steve's resume with you. You can download it by clicking the button below:<br><br>
+            <a class="option" href="./assets/SteveArtavia - CV.pdf" download>Download CV</a>
         `
     ],
     
     getPortfolio: () => [
-        `You can check out my portfolio here: <br><br>
-            <a class="option" href="https://steveartavia.netlify.app/">Portfolio</a>
+        `You can check out his portfolio here: <br><br>
+            <a class="option" href="https://steveartavia.netlify.app/">Go to Steve's portfolio</a>
         `
     ],
 
@@ -43,14 +43,11 @@ const chatResponses = {
     ],
 
     getAboutMe: () => [
-        `Steve is a passionate aspiring web developer with solid foundational skills in HTML, CSS, JavaScript, PHP, and MySQL. 
-        He is highly motivated to become a valuable part of a web development team. 
-        Currently studying backend development to further strengthen his expertise, 
-        Steve is eager to contribute his full effort and make a meaningful impact on every project he joins.`
+        `Steve has experience building websites using HTML, CSS, Bootstrap and JavaScript. His interest in expanding his skillset has led him to study backend development with Java. He is looking for opportunities where he can continue learning, contribute and grow professionally.`
     ],
 
     getHelp: () => [
-        `It seems you need some assistance! You can interact with me by typing keywords like "resume", "cv", "portfolio", "contact", or "about". Try typing one of those!`
+        `It seems you need some assistance! You can interact with me by typing keywords like: <br>- "resume"<br>- "cv"<br>- "portfolio"<br>- "contact"<br>- "about"<br> Try typing one of those!`
     ],
 
     getDefaultMessage: () => [

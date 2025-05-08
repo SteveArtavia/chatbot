@@ -1,9 +1,11 @@
 :root{
+    --backgroundColor:#efefef;
     --primary: rgb(255, 255, 255);
     --color1: rgb(0, 0, 0);
-    --color2:rgb(83, 63, 172);
-    --color3: rgb(236, 236, 236);
-    --color4:rgb(92, 92, 92);
+    --color2:rgb(51, 187, 202);
+    --color3: rgb(226, 235, 236);
+    --color4:rgb(126, 138, 139);
+    --hoverColor:rgb(91, 107, 109);
 }
 *{
     margin: 0;
@@ -11,7 +13,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var(--primary);
+    background-color: var(--backgroundColor);
     font-family: 'Poppins', sans-serif;
     color: var(--color1);
 }
@@ -37,10 +39,11 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1em 4em !important;
-    background-color: transparent;
+    background-color: var(--primary);
     opacity: 0.7;
     border-radius: 1rem;
-    border: 1px solid var(--color1);
+    border: 1px solid var(--color3);
+    box-shadow: 0 0 10px 0 rgb(192, 192, 192) !important;
     color: var(--color1);
     width: 70vw;
     max-height: 400px;
@@ -58,7 +61,7 @@ body {
     margin-left: auto;
     color: var(--primary);
     text-align: right;
-    background-color: var(--color1);
+    background-color: var(--color2);
     padding: 0.5rem 1.2rem;
     border-radius: 1rem;
 }
@@ -72,7 +75,7 @@ body {
 }
 input{
     border-radius: 2rem;
-    background-color: var(--color3) !important;
+    background-color: var(--primary) !important;
     padding: 1rem 1.2rem !important;
     border: none !important;
 }
@@ -84,16 +87,21 @@ input::placeholder{
     color: grey !important;
 }
 #send-btn{
-    background-color: var(--color3);
+    background-color: var(--primary);
     color: var(--color1) !important;
     font-weight: bolder !important;
     outline: none !important;
     border: none;
-    font-size: 1.5rem;
     padding: 0 1rem;
 }
 #send-btn:hover{
-    border-color: none !important;
+    color: var(--color2);
+}
+i{
+    color: black !important;
+    font-size: 1.2rem;
+}
+i:hover{
     color: var(--color2) !important;
 }
 
@@ -104,7 +112,7 @@ input::placeholder{
 }
 .option{
     background-color: var(--color4) !important;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
     border: none;
     color: var(--primary) !important;
     border-radius: 0.5rem;
@@ -113,7 +121,7 @@ input::placeholder{
 }
 .option:hover{
     color: var(--primary) !important;
-    background-color: var(--color2) !important;
+    background-color: var(--hoverColor) !important;
 }
 
 /* Pantallas moviles */
