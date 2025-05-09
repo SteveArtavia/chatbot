@@ -75,7 +75,7 @@ h1{
     color: var(--color1);
     width: 90vw;
     max-height: 40rem;
-    min-height: 50vh;
+    min-height: 60vh;
     overflow-y: scroll;
     box-shadow: none !important;
 
