@@ -1,11 +1,13 @@
 :root{
-    --backgroundColor:#efefef;
+    --backgroundColor:#eceef3;
     --primary: rgb(255, 255, 255);
     --color1: rgb(0, 0, 0);
-    --color2:rgb(51, 187, 202);
-    --color3: rgb(226, 235, 236);
-    --color4:rgb(126, 138, 139);
-    --hoverColor:rgb(91, 107, 109);
+    --color2:rgb(20, 118, 231);
+    --color3: rgb(234, 240, 243);
+    --color4:rgb(166, 176, 177);
+    --color5:rgb(56, 215, 255);
+    --hoverColor:rgb(31, 186, 224);
+    --botText:rgb(72, 73, 83);
 }
 *{
     margin: 0;
@@ -14,7 +16,7 @@
 }
 body {
     background-color: var(--backgroundColor);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--color1);
 }
 
@@ -28,27 +30,53 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-radius: 1rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgb(160, 160, 160);
 }
-.title{
-    color: white;
-    margin-bottom: 2rem;
+.main__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    background-image: linear-gradient(45deg, var(--color2), var(--color5));
+    padding: 1rem 2rem;
+    width: 100%;
+    color: var(--primary);
+}
+small{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 2rem;
+}
+#artie-img{
+    color: white !important;
+    font-size: 2rem;
+    border: 3px solid var(--primary);
+    padding: 0.5rem;
+    border-radius: 100rem;
 }
 
 #chat-box{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1em 4em !important;
+    padding: 2rem 1.5rem !important;
     background-color: var(--primary);
-    opacity: 0.7;
-    border-radius: 1rem;
+    border-radius: 0px !important;
     border: 1px solid var(--color3);
-    box-shadow: 0 0 10px 0 rgb(192, 192, 192) !important;
     color: var(--color1);
-    width: 70vw;
+    width: 90vw;
     max-height: 400px;
     min-height: 70vh;
     overflow-y: scroll;
+    box-shadow: none !important;
 
 }
 ::-webkit-scrollbar{
@@ -66,7 +94,7 @@ body {
     border-radius: 1rem;
 }
 .botMessage{
-    color: var(--color1);
+    color: var(--botText);
     text-align: left;
     margin-right: 4rem;
     background-color: var(--color3);
@@ -74,9 +102,9 @@ body {
     border-radius: 1rem;
 }
 input{
-    border-radius: 2rem;
+    border-radius: 0;
     background-color: var(--primary) !important;
-    padding: 1rem 1.2rem !important;
+    padding: 2rem 1.5rem 1.5rem 1.5rem !important;
     border: none !important;
 }
 input:focus{
@@ -84,25 +112,23 @@ input:focus{
     border: none;
 }
 input::placeholder{
-    color: grey !important;
+    color: rgb(201, 201, 201) !important;
 }
 #send-btn{
-    background-color: var(--primary);
-    color: var(--color1) !important;
+    background-image: linear-gradient(45deg, var(--color2), var(--color5));
     font-weight: bolder !important;
     outline: none !important;
     border: none;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+    margin: 1rem;
 }
 #send-btn:hover{
-    color: var(--color2);
+    box-shadow: 0 0 10px 0 grey;
 }
 i{
-    color: black !important;
+    color: var(--primary);
     font-size: 1.2rem;
-}
-i:hover{
-    color: var(--color2) !important;
 }
 
 .options{
@@ -111,17 +137,16 @@ i:hover{
     flex-wrap: wrap;
 }
 .option{
-    background-color: var(--color4) !important;
-    padding: 0.3rem 1rem;
-    border: none;
-    color: var(--primary) !important;
-    border-radius: 0.5rem;
+    background-color: transparent;
+    padding: 0.3rem 1.2rem;
+    border: 2px solid var(--color2);
+    color: var(--color2) !important;
+    border-radius: 3rem;
     text-decoration: none;
-    font-weight: 100 !important;
 }
 .option:hover{
-    color: var(--primary) !important;
-    background-color: var(--hoverColor) !important;
+    border: 2px solid var(--hoverColor);
+    color: var(--hoverColor) !important;
 }
 
 /* Pantallas moviles */
@@ -130,13 +155,13 @@ i:hover{
         width: 90vw;
     }
     #chat-box{
-        height: 1000px;
+        height: 10rem;
         padding: 2rem 1.5rem !important;
         width: 90vw;
     }
 }
 @media (min-width: 992px){
     #chat-box{
-        width: 50vw;
+        width: 40vw;
     }
 }

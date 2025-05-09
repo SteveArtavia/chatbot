@@ -33,6 +33,12 @@ export const handleChatInteraction = (input) => {
         option = chatResponses.getHelp();
         response = option[0];
 
+    } else if(input.includes("skill") || input.includes("techno")){
+        option = chatResponses.getSkills();
+        response = option[0];
+    } else if(input.includes("experience")){
+        option = chatResponses.getExperience();
+        response = option[0];
     } else {
         option = chatResponses.getDefaultMessage();
         response = option[0];
