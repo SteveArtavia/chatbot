@@ -4,6 +4,7 @@ import chatResponses from './chatResponses.js';
 let chatBox = document.getElementById('chat-box');
 let userInput = document.getElementById('user-input');
 let sendBtn = document.getElementById('send-btn');
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 const initialMessage = () => {
     let botMessage = document.createElement('p');
@@ -47,9 +48,12 @@ const sendMessage = () => {
         userInput.value = '';
 
         chatBox.scrollTop = chatBox.scrollHeight;
-        userInput.blur();
-        userInput.focus();
 
+        if(!isMobile){
+            userInput.focus();
+        } else{
+            userInput.blur();
+        }
     }
 }
 
