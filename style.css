@@ -54,6 +54,7 @@ h1{
     flex-direction: column;
     margin: 0;
     font-size: 2rem;
+    font-weight: 700;
 }
 #artie-img{
     color: white !important;
