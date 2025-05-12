@@ -16,7 +16,7 @@ const initialMessage = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     initialMessage();
-})
+});
 
 const displayUserMessage = (input) => {
     let userMessage = document.createElement('p');

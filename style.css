@@ -75,7 +75,7 @@ h1{
     color: var(--color1);
     width: 90vw;
     max-height: 40rem;
-    min-height: 60vh;
+    min-height: 60dvh;
     overflow-y: scroll;
     box-shadow: none !important;
 
@@ -163,6 +163,6 @@ i{
 }
 @media (min-width: 992px){
     #chat-box{
-        width: 40vw;
+        width: 40dvw;
     }
 }
